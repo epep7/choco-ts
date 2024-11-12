@@ -24,5 +24,5 @@ Choco adalah aplikasi klien pribadi yang dirancang untuk melakukan autentikasi d
 
 
 ### Support
-- ![Deno](https://raw.githubusercontent.com/deno-libs/tinyhttp/master/logo.svg) Deno
-- ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white) Node.js
+[![Deno](https://img.shields.io/badge/Deno-000?logo=deno&logoColor=fff)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)](#)
