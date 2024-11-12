@@ -1,0 +1,10 @@
+{
+  "name": "choco",
+  "description": "description",
+  "authors": "Ep",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "peerDependencies":{
+    "typescript":"^5.6.3"
+  }
+}
