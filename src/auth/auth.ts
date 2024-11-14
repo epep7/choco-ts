@@ -17,6 +17,17 @@ type User = {
 export class Auth {
   constructor(private client: Client) {}
 
+
+  public authorize({provider, redirect}: {provider: Provider, redirect: string}): void
+  {
+
+    if (window !== undefined) {
+      window.location.replace(`${this.client.url}/oauth/authrorize?provider=${provider}&redirect=${redirect}`)
+      return;
+    }
+    throw new Error("Unsupported platform");
+  }
+
   public async signWithIdToken({
     provider,
     idToken,
@@ -34,7 +45,7 @@ export class Auth {
   }
 
   private async googleExchangeIdToken(idToken: string) {
-    const resultFetch = await fetch(`${this.client.url}/auth`, {
+    const resultFetch = await fetch(`${this.client.url}/oauth`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
